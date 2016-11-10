@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="Cf7-3Y-Wtc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sticker_keep.png" translatesAutoresizingMaskIntoConstraints="NO" id="D7N-F1-RRG">
+                    <rect key="frame" x="106" y="150" width="164" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="164" id="0tt-ZV-w3n"/>
+                        <constraint firstAttribute="height" constant="80" id="qmG-4E-0VU"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mrj-5l-5Eb">
+                    <rect key="frame" x="20" y="612" width="120" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="5GW-DZ-Ajt"/>
+                        <constraint firstAttribute="height" constant="35" id="VLe-wN-VpN"/>
+                    </constraints>
+                    <state key="normal" title="注册" backgroundImage="background.png"/>
+                    <connections>
+                        <action selector="signup:" destination="-1" eventType="touchUpInside" id="ZcV-qj-7u2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbq-t2-zDb">
+                    <rect key="frame" x="237" y="614" width="120" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="3rd-NG-XJ3"/>
+                        <constraint firstAttribute="width" constant="120" id="f3V-oP-Zlr"/>
+                    </constraints>
+                    <state key="normal" title="登录" backgroundImage="background.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="signin:" destination="-1" eventType="touchUpInside" id="YN5-zp-yEq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Mrj-5l-5Eb" secondAttribute="bottom" constant="20" id="2b8-Jw-Lk5"/>
+                <constraint firstAttribute="trailing" secondItem="Vbq-t2-zDb" secondAttribute="trailing" constant="18" id="G0t-jQ-onb"/>
+                <constraint firstItem="D7N-F1-RRG" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="brl-VJ-BlB"/>
+                <constraint firstItem="D7N-F1-RRG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="150" id="jem-9u-VgO"/>
+                <constraint firstItem="Mrj-5l-5Eb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="wB6-6N-wHR"/>
+                <constraint firstAttribute="bottom" secondItem="Vbq-t2-zDb" secondAttribute="bottom" constant="18" id="z60-D3-PyS"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background.png" width="640" height="200"/>
+        <image name="sticker_keep.png" width="164" height="79"/>
+    </resources>
+</document>
